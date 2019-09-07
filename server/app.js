@@ -14,10 +14,10 @@ const mongoose = require('mongoose');
 const app = express();
 
 //connect to mlab database
-mongoose.connect('mongodb+srv://demographql:passme123@cluster0-gitnq.mongodb.net/test?retryWrites=true&w=majority');
-mongoose.connection.once('open'.()=>{
-  console.log('connected to database');
-})
+//mongoose.connect('mongodb+srv://demographql:passme123@cluster0-gitnq.mongodb.net/test?retryWrites=true&w=majority');
+//mongoose.connection.once('open', ()=>{
+//  console.log('connected to database');
+//})
 
 //middleware
 app.use('/graphql', graphqlHTTP({
